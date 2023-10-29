@@ -1,0 +1,135 @@
+.testimonials {
+  width: 100%;
+  color: #45505b;
+  height: 100vh;
+  width: 100%;
+  //   padding: 0 7rem;
+
+  .container {
+    max-width: 1100px;
+    height: 100%;
+    margin: 5rem auto;
+    padding: 4rem 0rem;
+
+    .section-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      span {
+        background-color: pink;
+        margin-bottom: 1rem;
+      }
+    }
+    .content {
+      .card {
+        // border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 5rem;
+        margin-bottom: 1rem;
+
+        img {
+          border-radius: 50%;
+          width: 8rem;
+          margin-bottom: 1rem;
+          //   border: 1px solid red;
+        }
+
+        h3 {
+          color: black;
+          font-size: 1.3rem;
+          text-align: center;
+          letter-spacing: 1px;
+          font-family: sans-serif;
+        }
+
+        h4 {
+          margin-bottom: 3rem;
+          text-align: center;
+          color: gray;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        a {
+          p {
+            text-align: center;
+            font-style: italic;
+            color: #0563bb;
+            svg {
+              opacity: 0.5;
+              margin: 0 0.5rem 0.3rem 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .testimonials {
+    .container {
+      max-width: 1020px;
+      margin: auto 10%;
+      // margin-right: 20%;
+      // margin-left: 20%;
+      .section-title {
+        h2 {
+        }
+        span {
+        }
+      }
+      .content {
+        .card {
+          .img {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials {
+    height: fit-content;
+    .container {
+      .section-title {
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+      .content {
+        .card {
+          padding: 3rem 0rem;
+
+          img {
+            width: 5rem;
+          }
+          h3 {
+            font-size: 1rem;
+            text-align: justify;
+          }
+          h4 {
+            margin-top: .5rem;
+            font-size: 0.8rem;
+            text-align: justify;
+          }
+          a {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

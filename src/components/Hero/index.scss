@@ -1,0 +1,149 @@
+.hero {
+  opacity: 0.8;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: url("../../assets/img/Elena.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem 6rem;
+
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 4rem;
+      font-weight: 700;
+      //   line-height: 5rem;
+      color: #45505b;
+    }
+
+    p {
+      margin: 0 0 1rem 0;
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: #45505b;
+      span {
+        padding-left: 0.2rem;
+        color: #0563bb;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: left;
+      margin-top: 1rem;
+      li {
+        margin-right: 2rem;
+        a {
+          svg {
+            color: #45505b;
+            font-size: 1.5rem;
+            transition: all 0.5s ease;
+          }
+        }
+        &:hover {
+          svg {
+            color: #0563bb;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .hero {
+    &:before {
+      background-position: 90% center;
+    }
+    .content {
+      p {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .hero {
+    .content {
+      max-width: 615px;
+      // padding: 1rem 2rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      ul {
+        margin-top: 0;
+        li {
+          margin-right: 1rem;
+          a {
+            svg {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero {
+    .content {
+      max-width: 510px;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .hero {
+    &:before {
+      background-position: 85% center;
+    }
+    .content {
+      max-width: 375px;
+      padding: 1rem 2rem;
+      h1 {
+        font-size: 2.6rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      ul {
+        margin-top: .5rem;
+        li {
+          margin-right: 1.8rem;
+          a {
+            svg {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
